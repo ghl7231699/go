@@ -1,0 +1,29 @@
+hosts:
+  - pg-openstack-test-zk-00.idc.xiaozhu.com:2181
+timeInterval: 1s
+# session time alive minutes
+sessionTime: 30s
+# debug Timeout
+timeout: 30s
+# retry times
+retryTime: 3
+exitWhenError: true
+backupNum: 3
+# 配置写入完整文件名,路径与 dotenv-generator 同目录
+envPath: .env
+# 读取配置中心的 path 名称
+#root: "/xzweb/test"
+root: "/test6/test3"
+# 是否需要读取影子配置
+hasShadow: false
+shadowRoot: "/xz/develop/activity/activity/shadow"
+# 执行日志文件
+logFile: out.log
+# todo
+afterTrick: 'echo 1'
+# output format  dotenv/yaml/json
+debugMode: false
+outputFile: app/config/app.yaml
+# alarm config
+alarmToken: 3d3cb349dd4c78acffaf29db990a15007923a88b0f283e4903eba8e195b2195a
+alarmGateway: http://10.4.13.171:8091

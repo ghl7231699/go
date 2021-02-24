@@ -1,0 +1,24 @@
+definitions:
+  hello.GreeterResponse:
+    properties:
+      data:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 请求成功
+          schema:
+            $ref: '#/definitions/hello.GreeterResponse'
+        "500":
+          description: 服务异常
+      summary: 问候
+      tags:
+      - Hello
+swagger: "2.0"

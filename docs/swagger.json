@@ -1,0 +1,40 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Hello"
+                ],
+                "summary": "问候",
+                "responses": {
+                    "200": {
+                        "description": "请求成功",
+                        "schema": {
+                            "$ref": "#/definitions/hello.GreeterResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "服务异常"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "hello.GreeterResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

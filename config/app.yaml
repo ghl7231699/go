@@ -1,0 +1,21 @@
+app:
+  http_port: 80
+  read_timeout: 30
+  write_timeout: 30
+#mysql:
+#  - name: db1
+#    master: master_dns1
+#    slaves:
+#      - slave1_dns1
+#      - slave1_dns2
+#  - name: db2
+#    master: master_dns2
+#    slaves:
+#      - slave2_dns1
+#      - slave2_dns2
+#redis:
+#  default: dns
+#  cluster:
+#    - dns1
+#    - dns2
+#    - dns3
